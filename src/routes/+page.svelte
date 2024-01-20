@@ -4,6 +4,10 @@
     import instalogo from "$lib/instagramlogo.png";
 </script>
 
+<svelte:head>
+    <title>Knocking about somewhere.</title>
+</svelte:head>
+
 <div class="container">
     <a
         href="https://github.com/TeddiO"
