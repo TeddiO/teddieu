@@ -8,7 +8,8 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: '/teddieu'
+			// base: '/teddieu',
+			// relative: true
 		},
 	}
 };

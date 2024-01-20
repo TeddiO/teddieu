@@ -29,7 +29,7 @@
         target="_blank"
         rel="noopener noreferrer"
     >
-        <img class="icon" src={instalogo} alt="Steam Profile" />
+        <img class="icon" src={instalogo} alt="Instagram" />
     </a>
 </div>
 
