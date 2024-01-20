@@ -41,6 +41,7 @@
         background-blend-mode: darken;
         background-color: rgba(0, 0, 0, 0.4);
         overflow-y: hidden;
+        user-select: none;
     }
 
     .container {
