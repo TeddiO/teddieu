@@ -6,11 +6,15 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			fallback: '404.html',
+			prerender: true,
+			ssr: false,
+		}),
 		paths: {
-			// base: '/teddieu',
-			// relative: true
+
 		},
+
 	}
 };
 
