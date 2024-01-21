@@ -1,9 +1,10 @@
 <script>
     import { page } from "$app/stores";
+    const d = new Date().getFullYear();
 </script>
 
 <svelte:head>
-    <title>Knocking about somewhere.</title>
+    <title>Well that's awkward, we found an error.</title>
 </svelte:head>
 
 <div class="container">
@@ -12,7 +13,7 @@
     <p>{$page.error.message}</p>
 </div>
 
-⠀
+<p id="copyright">Background Image © {d} Chris Charlesworth</p>
 
 <style>
     :global(body) {
@@ -26,7 +27,7 @@
     }
 
     #shrug {
-        font-size: 7rem;
+        font-size: 4.5rem;
         color: white;
         margin-top: 5px;
         margin-bottom: 5px;
@@ -42,5 +43,15 @@
 
     .container {
         height: 100vh;
+    }
+
+    #copyright {
+        position: absolute;
+        bottom: 0;
+        font-size: 0.5rem;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: "Roboto", sans-serif;
+        left: 50%;
+        transform: translateX(-50%);
     }
 </style>

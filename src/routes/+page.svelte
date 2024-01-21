@@ -2,6 +2,8 @@
     import octocat from "$lib/github-mark-white-c.png";
     import steamicon from "$lib/steamworks-steam-logo.png";
     import instalogo from "$lib/instagramlogo.png";
+
+    const d = new Date().getFullYear();
 </script>
 
 <svelte:head>
@@ -31,6 +33,8 @@
     >
         <img class="icon" src={instalogo} alt="Instagram" />
     </a>
+
+    <p id="copyright">Background Image © {d} Chris Charlesworth</p>
 </div>
 
 <style>
@@ -55,5 +59,13 @@
         margin: 0 10px;
         width: 8vh;
         height: 8vh;
+    }
+
+    #copyright {
+        position: absolute;
+        bottom: 0;
+        font-size: 0.5rem;
+        color: rgba(255, 255, 255, 0.8);
+        font-family: "Roboto", sans-serif;
     }
 </style>
