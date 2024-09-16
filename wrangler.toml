@@ -1,0 +1,13 @@
+name = "teddieu-landing-page"
+type = "javascript"
+compatibility_date = "16-09-2024"
+
+[env.staging]
+workers_dev = true
+
+[env.production]
+workers_dev = false
+
+routes = [
+    https://teddi.eu
+]
