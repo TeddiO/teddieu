@@ -9,5 +9,5 @@ workers_dev = true
 workers_dev = false
 
 routes = [
-    { pattern =  "https://teddi.eu", custom = true }
+    { pattern = "https://teddi.eu", custom = true }
 ]
