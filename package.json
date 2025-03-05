@@ -16,7 +16,8 @@
 	},
 
 	"resolutions": {
-		"cookie": "^0.7.0"
+		"cookie": "^0.7.0",
+		"esbuild": "^0.25"
 	},
 
 	"type": "module"
