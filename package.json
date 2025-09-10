@@ -12,7 +12,7 @@
 		"@sveltejs/kit": "^2.38.0",
 		"@sveltejs/vite-plugin-svelte": "^3.1.2",
 		"svelte": "^4.2.20",
-		"vite": "^5.4.19"
+		"vite": "^5.4.20"
 	},
 
 	"resolutions": {
