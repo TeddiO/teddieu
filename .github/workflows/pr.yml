@@ -3,6 +3,9 @@ name: Build (PR)
 on:
   pull_request:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 jobs:
   build-app:
     permissions:
@@ -25,7 +28,6 @@ jobs:
     - name: Publish to Cloudflare Pages
       uses: cloudflare/wrangler-action@v3
       env:
-        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
         environment: "staging"
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
