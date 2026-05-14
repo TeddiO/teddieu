@@ -1,0 +1,6 @@
+allowBuilds:
+  esbuild: true
+  workerd: true
+overrides:
+  cookie: "^0.7.0"
+  esbuild: "^0.27"
