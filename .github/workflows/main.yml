@@ -9,6 +9,9 @@ concurrency:
   group: main
   cancel-in-progress: true
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 jobs:
   build-app:
 
@@ -29,7 +32,7 @@ jobs:
     - name: Publish to Cloudflare Pages
       uses: cloudflare/wrangler-action@v3
       env:
-        environment: "staging"
+        environment: "production"
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
