@@ -1,7 +1,7 @@
 <script>
-    import octocat from "$lib/github-mark-white-c.png";
-    import steamicon from "$lib/steamworks-steam-logo.png";
-    import instalogo from "$lib/instagramlogo.png";
+    import octocat from "#lib/github-mark-white-c.png";
+    import steamicon from "#lib/steamworks-steam-logo.png";
+    import instalogo from "#lib/instagramlogo.png";
 
     const d = new Date().getFullYear();
 </script>
@@ -39,7 +39,7 @@
 
 <style>
     :global(body) {
-        background-image: url($lib/dji_0321.webp);
+        background-image: url(../lib/dji_0321.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-blend-mode: darken;

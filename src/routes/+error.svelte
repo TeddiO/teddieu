@@ -1,5 +1,5 @@
 <script>
-    import { page } from "$app/stores";
+    import { page } from "$app/state";
     const d = new Date().getFullYear();
 </script>
 
@@ -8,16 +8,16 @@
 </svelte:head>
 
 <div class="container">
-    <p>{$page.status}</p>
+    <p>{page.status}</p>
     <p id="shrug">¯\_(ツ)_/¯</p>
-    <p>{$page.error.message}</p>
+    <p>{page.error?.message}</p>
 </div>
 
 <p id="copyright">Background Image © {d} Chris Charlesworth</p>
 
 <style>
     :global(body) {
-        background-image: url($lib/dji_0321.webp);
+        background-image: url(../lib/dji_0321.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-blend-mode: darken;

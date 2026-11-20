@@ -38,10 +38,14 @@ jobs:
             echo "bypass=false" >> "${GITHUB_OUTPUT}"
           fi
 
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: 24
+          package-manager-cache: false
+
       - name: Set up pnpm
         uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6.1.1
-        with:
-          version: 11
 
       - name: Bypass pnpm release age cutoff
         if: steps.pnpm-cutoff.outputs.bypass == 'true'
@@ -49,6 +53,9 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Audit dependencies
+        run: pnpm audit --audit-level high
 
       - name: Build App
         run: pnpm build
